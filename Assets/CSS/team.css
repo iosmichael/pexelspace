@@ -1,0 +1,55 @@
+body{
+	background-color: white;
+	background-repeat: repeat;
+}
+#join-team-form{
+	margin-top: 50px;
+	display: none;
+	color: black;
+}
+
+#form-button img{
+	width: 50px;
+	height: 50px;
+	display: inline-block;
+}
+#form-button span{
+	padding-left: 15px;
+	color: black;
+	font-weight: bold;
+}
+
+
+
+.title-content h1{
+	font-family: 'HelveticaNeue-UltraLight', 'Helvetica Neue UltraLight', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+  	font-weight: 300;
+}
+
+.title-wrapper {
+	font-family: 'HelveticaNeue-UltraLight', 'Helvetica Neue UltraLight', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+	background-image: url('../Images/computer-blur.png');
+	background-attachment: fixed;
+	text-align: center;
+	height: 600px;
+	width: 100%;
+	color: white;
+
+}
+
+#title-service{
+	margin-top: 0px;
+	margin-bottom: 70px;
+
+	padding-top: 140px;
+	font-size: 60;
+	font-family: Courier New, monospace;
+	font-weight: bold;
+}
+#title-disc{
+	margin-right: 80px;
+	margin-left: 80px;
+	font-family: Courier New, monospace;
+	font-size: 25;
+}
+

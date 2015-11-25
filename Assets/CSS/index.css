@@ -1,0 +1,124 @@
+body {
+	color: #222;
+	background-color: white;
+}
+
+.title-wrapper {
+	font-size: 300%;
+	padding-top: 80px;
+	width: 100%;
+	background-image: url("../Images/tech-blur.jpg");
+	color: white;
+}
+
+.title-wrapper .title-content p{
+	font-size: 50%;
+	margin-top: 50px;
+	margin-bottom: 38px;
+	text-align: center;
+}
+
+#sign-me-up{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: 20px;
+	border: none;
+	padding: 10px 16px;
+}
+
+#sign-me-up-wrapper:hover{
+	text-decoration: none;
+}
+
+.word-rewrite{
+	display: inline;
+	padding-left: 0;
+}
+
+.word-rewrite:after{
+	content: "|";
+	font-weight: lighter;
+	font-size: 90%;
+	transform: translateX(-4px);
+}
+
+.word-rewrite.waiting:after{
+	content: "|";
+	font-weight: lighter;
+	font-size: 90%;
+	-webkit-animation: 700ms blink step-end infinite; -moz-animation: 1s blink step-end infinite; -ms-animation: 1s blink step-end infinite; -o-animation: 1s blink step-end infinite;
+  	animation: 700ms blink step-end infinite;
+}
+@keyframes "blink" { from, to { color: transparent; } 50% { color: inherit; } }
+@-moz-keyframes blink { from, to { color: transparent; } 50% { color: inherit; } }
+@-webkit-keyframes "blink" { from, to { color: transparent; } 50% { color: inherit; } }
+@-ms-keyframes "blink" { from, to { color: transparent; } 50% { color: inherit; } }
+@-o-keyframes "blink" { from, to { color: transparent; } 50% { color: inherit; } }
+
+
+.word-rewrite li{
+	display: none;
+}
+
+#services-wrapper .services-header .services-icon{
+	height: 40px;
+	vertical-align: middle;
+}
+
+#team-wrapper{
+	margin: 100px 0;
+}
+
+#team-wrapper .profile-wrapper{
+	padding: 0 2%;
+}
+
+#team-wrapper .profile-wrapper .profile-content{
+	box-shadow: 0 0 8px #888;
+	position: relative;
+}
+
+#team-wrapper .profile-wrapper .profile-img{
+	width: 100%;
+}
+
+#team-wrapper .profile-wrapper .profile-body{
+	background-color: #ddd;
+	padding: 4%;
+}
+
+#team-wrapper .profile-body p, #team-wrapper .profile-body h2 {
+	margin: 0;
+}
+
+#team-wrapper .profile-body h2{
+	font-size: 20px;
+}
+
+#team-wrapper .profile-body hr{
+	margin: 4px 0;
+}
+
+#profile-you .profile-content:hover{
+	cursor: pointer;
+}
+
+#profile-you .profile-content.profile-hover::before{
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	background-color: rgba(0, 0, 0, .3);
+}
+
+#quote-wall {
+	margin: 70px 0;
+}
+
+#quote-wall p {
+	font-size: 150%;
+}
+
