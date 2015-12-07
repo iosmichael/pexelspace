@@ -10,14 +10,18 @@ function formButtonClicked(formNum,elem1,elem2){
 					if (formNum==1) {
 							document.getElementsByClassName("form-one")[0].style.display="block";
 							document.getElementsByClassName("application-forms")[0].style.display="block";
+							document.getElementsByClassName("form-two")[0].style.display="none";
+							
 							$(".application-forms").transition({
 									delay:300,
 									opacity:'1'
 							});
 
 							}else if (formNum==2) {
-								document.getElementsByClassName("form-one")[0].style.display="block";
+								document.getElementsByClassName("form-two")[0].style.display="block";
 								document.getElementsByClassName("application-forms")[0].style.display="block";
+								document.getElementsByClassName("form-one")[0].style.display="none";
+							
 								$(".application-forms").transition({
 									delay:300,
 									opacity:'1'

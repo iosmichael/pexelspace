@@ -11,10 +11,16 @@
 	<body>
 		<?php siteHeader(); ?>
 		<div class="title-wrapper">
-			<div class="title-content">
-				<h1 id="title-service">Our Community</h1>
-				<div id="divider"> </div>
-				<h4 id="title-disc">We are a group of passionate programmers, who are thriving to write codes that matter</h4>
+			<div class="row">
+				<div class="title-content col-lg-7 col-lg-offset-1">
+					<h1 id="title-service">Our Community</h1>
+					<div id="divider"> </div>
+					<h2 id="title-disc">We are a group of passionate programmers, who are thriving to write codes that matter</h2>
+					<button onclick="formButtonClicked()">JOIN US TODAY</button>
+				</div>
+				<div class="title-image col-lg-3">
+					<img src="#" alt="Posture Picture">
+				</div>
 			</div>
 		</div>
 		<div class="divider"></div>
@@ -22,17 +28,25 @@
 		<div class="main-content">
 			<div class= "container">
 
-				<div class= "col-lg-10 col-lg-offset-1" id="mid-content">
+				<div class= "col-lg-10 col-lg-offset-1">
 					<div class="row">
 						<div class="team-1">
 							<div class="team-img-1 col-lg-3">
 								<img src="./Assets/Images/michael.png" class="img-responsive">
 							</div>
-							<div class="team-desc-1 col-lg-5 col-lg-offset-2">
-								<h4>Position:</h4>
+							<div class="team-desc-1 col-lg-7 col-lg-offset-1">
+								<h3>Position:</h3>
 								<p>Front-end Developer/ Project Manager</p>
-								<h4>Description: </h4>
+								<h3>Who are you? </h3>
 								<p> Software developer with two years of programming experience on various programming languages. Bilingual international student from China with experience in forming start-up company and communicating with professionals in financial/technical fields. Passionate about developing creative software and improving business strategy. </p>
+								<h3>What is your favorite color?</h3>
+								<p>Black I would say.</p>
+								<h3>Contact: </h3>
+								<ul>
+									<li>Phone: 815-909-9477</li>
+									<li>Email: michael.liu@my.wheaton.edu</li>
+									<li>CPO: 2084</li>
+								</ul>
 							</div>
 						</div>
 					</div>
@@ -41,11 +55,19 @@
 							<div class="team-img-2 col-lg-3">
 								<img src="./Assets/Images/derek.png" class="img-responsive">
 							</div>
-							<div class="team-desc-2 col-lg-5 col-lg-offset-2">
-								<h4>Position:</h4>
-								<p>Front-end Developer/ Back-end Developer</p>
-								<h4>Description:</h4>
-								<p> blablabla </p>
+							<div class="team-desc-2 col-lg-7 col-lg-offset-1">
+								<h3>Position:</h3>
+								<p>Front-end Developer/ Project Manager</p>
+								<h3>Who are you? </h3>
+								<p> Software developer with two years of programming experience on various programming languages. Bilingual international student from China with experience in forming start-up company and communicating with professionals in financial/technical fields. Passionate about developing creative software and improving business strategy. </p>
+								<h3>What is your favorite color?</h3>
+								<p>Black I would say.</p>
+								<h3>Contact: </h3>
+								<ul>
+									<li>Phone: 815-909-9477</li>
+									<li>Email: michael.liu@my.wheaton.edu</li>
+									<li>CPO: 2084</li>
+								</ul>
 							</div>
 						</div>
 					</div>

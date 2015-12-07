@@ -6,9 +6,24 @@ body{
 }
 .application-forms{
 	position: relative;
-	z-index: -2;
+	z-index: 10;
 	opacity: 0;
 	display: none;
+}
+.submission-button-box{
+	position: relative;
+}
+.submission-button{
+	font-size: 2em;
+	text-align: center;
+	font-weight: 400;
+	width: 50%;
+	position: absolute;
+	margin: auto;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
 }
 .title-wrapper h1{
 	font-family: 'HelveticaNeue-UltraLight', 'Helvetica Neue UltraLight', 'Helvetica Neue', Arial, Helvetica, sans-serif;
@@ -130,30 +145,35 @@ body{
 
 .selection{
 	text-align: center;
-	height: 80%;
-	top: 60px;
 	margin-bottom: 60px;
+}
+.box{
+	padding:5px;
 }
 #selection-form-one{
 	background-image: url("../Images/services-page-icon.png");
 	height: 100%;
+	margin-top: 60px;
+	max-height: 550px;
 	box-shadow: 5px 5px 8px #222;
 }
 #selection-form-two{
 	background-image: url("../Images/services-website-icon.png");
 	height: 100%;
+	margin-top: 60px;
+	max-height: 550px;
 	box-shadow: 5px 5px 8px #222;
 }
 
-#selection-description h2, #selection-description p{
-	margin-top: 40px;
+#selection-description h2{
+	margin-top: 10%;
 	color: white;
 }
 #wrapper-desc{
 	height: 40%;
 }
 #selection-description p{
-	margin-top: 20%;
+	margin-top: 10%;
 	font-size: 25;
 	font-weight: 300;
 	margin-left: 15%;
@@ -161,6 +181,7 @@ body{
 	padding: 5px 10px;
 	margin-bottom: 20%;
 	border:2px solid white;
+	color: white;
 }
 #selection-description button{
 	margin-top: 10%;
@@ -178,6 +199,9 @@ body{
 	border:2px solid white;
 	cursor: pointer;
 
+}
+.form-one{
+	margin-bottom: 50px;
 }
 
 

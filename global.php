@@ -26,9 +26,9 @@
 						"</div>",
 						"<div class='collapse navbar-collapse'>",
 							"<ul class='nav navbar-nav navbar-right'>",
-								"<li" . $active['home'] . "><a href='index.php'>Home</a></li>",
-								"<li" . $active['services'] . "><a href='services.php'>Services</a></li>",
-								"<li" . $active['team'] . "><a href='team.php'>Team</a></li>",
+								"<li {$active['home']} ><a href='index.php'>Home</a></li>",
+								"<li {$active['services']} ><a href='services.php'>Services</a></li>",
+								"<li {$active['team']}><a href='team.php'>Team</a></li>",
 							"</ul>",
 						"</div>",
 					"</div>",
@@ -39,11 +39,23 @@
 	}
 
 	function siteFooter() {
+		$includer = substr($_SERVER['PHP_SELF'], strrpos($_SERVER['PHP_SELF'], "/") + 1);
+		$active = [
+			"team" => (strpos($includer, "team.php") !== false) ? " class='active'" : "",
+			"services" => (strpos($includer, "services.php") !== false) ? " class='active'" : "",
+			"home" => (strpos($includer, "index.php") !== false) ? " class='active'" : "",
+		];
 		
 		$footer = [
-			"<footer>",
-				"<div class='footer'>",
-					"footer",
+			"<footer class='row'>",
+				"<div class='container-fluid'>",
+					"<nav class='navbar col-sm-1 col-sm-offset-1'>",
+						"<ul class='nav navbar-nav navbar-left'>",
+								"<li {$active['home']} ><a href='index.php'>Home</a></li>",
+								"<li {$active['services']} ><a href='services.php'>Services</a></li>",
+								"<li {$active['team']}><a href='team.php'>Team</a></li>",
+						"</ul>",
+					"</nav>",
 				"</div>",
 			"</footer>"
 		];

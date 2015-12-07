@@ -1,0 +1,31 @@
+In Header:
+
+<script src="./Assets/JS/dropzone.js"></script>
+<link rel="stylesheet" type="text/css" href="Assets/CSS/dropzone.css">
+
+
+Wherever you want dropzone:
+
+<form action="upload.php" class="dropzone">
+	<div class="dz-message">
+		<img class="dz-img" src="Assets/Images/upload.png">
+		<br>
+		<p class="dz-drop-msg">Drop File Here to Submit</p>
+		<br>
+		<p class="dz-click-here">Or Click Here</p>
+	</div>
+</form>
+
+
+To do something after a file uploads, put this js in a file:
+Dropzone.forElement(QuerySelector).on("success", function(a) { 
+	 //Whatever Happens
+});
+***Replace QuerySelector the parameter with a query selector, 
+   so for an id "johnny", you would replace it with "#johnny"***
+
+
+Custom Styling has been done in the bottom of global.css,
+	Feel free to restyle however you would like or add/remove elements inside 
+	the body of the dropzone. It is important that the <div class="dz-message"> stays though.
+	So don't delete that element.
